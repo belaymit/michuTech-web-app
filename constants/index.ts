@@ -84,3 +84,11 @@ export const SOCIALS = {
     '/wordpress.svg',
   ],
 };
+
+export const TEAM_MEMBERS = [
+  { id: 1, name: 'Felema Garedow', role: 'CEO, Scientific Director', imageUrl: '/Felema.jpeg' },
+  { id: 2, name: 'Gemechis Sheleme', role: 'Managing Director', imageUrl: '/GemechisS.jpeg' },
+  { id: 3, name: 'Samuel Tesfaye', role: 'CTO', imageUrl: '/Samuel.jpg' },
+  { id: 4, name: 'Nebyat ', role: 'CTO', imageUrl: 'Nebyat.png' },
+  { id: 5, name: 'Jane Smith', role: 'CTO', imageUrl: '/Team_1.png' },
+];
