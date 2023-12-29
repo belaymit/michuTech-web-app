@@ -9,7 +9,7 @@ interface TeamMember {
 
 export default function TeamSection (){
   return (
-    <section className="bg-gray-100 py-12">
+    <section id="team" className="bg-gray-100 py-12">
       <div className="max-container">
         <h2 className="text-3xl text-center font-semibold mb-8">Our Team</h2>
 

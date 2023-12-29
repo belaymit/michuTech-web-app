@@ -5,7 +5,7 @@ import React from 'react'
 
 export default function Footer() {
   return (
-    <footer className="flexCenter mb-0 pb-6 pt-4 bg-blue-500 text-white">
+    <footer id="footer" className="flexCenter mb-0 pb-6 pt-4 bg-blue-500 text-white">
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
           <Link href="/" className="mb-10">
