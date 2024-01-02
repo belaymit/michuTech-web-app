@@ -1,10 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '/', key: 'home', label: 'Home' },
-  { href: '/', key: 'how_hilink_work', label: 'How Hilink Work?' },
-  { href: '/', key: 'services', label: 'Services' },
-  { href: '/', key: 'pricing ', label: 'Pricing ' },
-  { href: '/', key: 'contact_us', label: 'Contact Us' },
+  { href: '#home', key: 'home', label: 'Home' },
+  { href: '#about_us', key: 'about_us', label: 'About Us' },
+  { href: '#services', key: 'services', label: 'Services' },
+  { href: '#project', key: 'project', label: 'Projects' },
+  { href: '#team', key: 'team', label: 'Team' },
+  { href: '#contact_us', key: 'contact_us', label: 'Contact Us' },
 ];
 
 // CAMP SECTION
@@ -18,14 +19,14 @@ export const PEOPLE_URL = [
 // FEATURES SECTION
 export const FEATURES = [
   {
-    title: 'Real maps can be offline',
+    title: 'Washlink',
     icon: '/map.svg',
     variant: 'green',
     description:
       'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
   },
   {
-    title: 'Set an adventure schedule',
+    title: 'MichuGojo',
     icon: '/calendar.svg',
     variant: 'green',
     description:
@@ -87,8 +88,8 @@ export const SOCIALS = {
 
 export const TEAM_MEMBERS = [
   { id: 1, name: 'Felema Garedow', role: 'CEO, Scientific Director', imageUrl: '/Felema.jpeg' },
-  { id: 2, name: 'Gemechis Sheleme', role: 'Managing Director', imageUrl: '/GemechisS.jpeg' },
-  { id: 3, name: 'Samuel Tesfaye', role: 'CTO', imageUrl: '/Samuel.jpg' },
-  { id: 4, name: 'Nebyat ', role: 'CTO', imageUrl: 'Nebyat.png' },
+  { id: 2, name: 'Gemechis Sheleme', role: 'Chief Financial and HR Officer (CFO)', imageUrl: '/GemechisS.jpeg' },
+  { id: 3, name: 'Samuel Tesfaye', role: 'Board Member', imageUrl: '/Samuel.jpg' },
+  { id: 4, name: 'Nabiyat Lemma ', role: 'Chief Marketing and promotion  Officer', imageUrl: 'Nebyat.png' },
   { id: 5, name: 'Jane Smith', role: 'CTO', imageUrl: '/Team_1.png' },
 ];
