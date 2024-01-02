@@ -17,7 +17,7 @@ export default function Hero(){
 
     <div className="mt-10 lg:w-1/2 lg:mt-0">
       <Image
-        src="/michu-bg.jpg"
+        src="/michu-hero.png"
         alt="camp"
         width={600}
         height={800}
