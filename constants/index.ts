@@ -23,28 +23,14 @@ export const FEATURES = [
     icon: '/map.svg',
     variant: 'green',
     description:
-      'We provide a solution for you to be able to use our application when climbing, yes offline maps you can use at any time there is no signal at the location',
+      'WashLink is a mobile application designed to facilitate users in accessing laundry services through nearby washing machines. The platform offers users the convenience of initiating laundry services either through a dedicated short code or via the user-friendly mobile application. With WashLink, individuals can easily schedule and avail laundry services with a seamless and efficient experience.',
   },
   {
     title: 'MichuGojo',
     icon: '/calendar.svg',
     variant: 'green',
     description:
-      "Schedule an adventure with friends. On holidays, there are many interesting offers from Hilink. That way, there's no more discussion",
-  },
-  {
-    title: 'Technology using augment reality',
-    icon: '/tech.svg',
-    variant: 'green',
-    description:
-      'Technology uses augmented reality as a guide to your hiking trail in the forest to the top of the mountain. Already supported by the latest technology without an internet connection',
-  },
-  {
-    title: 'Many new locations every month',
-    icon: '/location.svg',
-    variant: 'orange',
-    description:
-      'Lots of new locations every month, because we have a worldwide community of climbers who share their best experiences with climbing',
+      "MichuGojo is a mobile application that streamlines the process of renting homes. It empowers users to conveniently browse and select their desired residence from a curated collection of available properties. Property owners can effortlessly showcase their homes by uploading images, providing a user-friendly platform for seamless home rental experiences.",
   },
 ];
 
@@ -53,7 +39,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Learn More',
     links: [
-      'About Hilink',
+      'About Home',
       'Press Releases',
       'Environment',
       'Jobs',
@@ -63,15 +49,15 @@ export const FOOTER_LINKS = [
   },
   {
     title: 'Our Community',
-    links: ['Climbing xixixi', 'Hiking hilink', 'Hilink kinthill'],
+    links: ['Community', 'MichuTech', 'MichuTech'],
   },
 ];
 
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '123-456-7890' },
-    { label: 'Email Officer', value: 'hilink@akinthil.com' },
+    { label: 'Admin Officer', value: '+251-98-616-4444' },
+    { label: 'Email Officer', value: 'michutech@gmail.com' },
   ],
 };
 
@@ -86,10 +72,17 @@ export const SOCIALS = {
   ],
 };
 
+export const partners = [
+  { id: 1, name: 'Arki Sport Betting', logoUrl: '/arki.jpeg' },
+  { id: 2, name: 'Wings Education and Media', logoUrl: '/wings.gif' },
+  { id: 3, name: 'Washlink, Wear Clean', logoUrl: '/wLink.png' },
+];
+
 export const TEAM_MEMBERS = [
-  { id: 1, name: 'Felema Garedow', role: 'CEO, Scientific Director', imageUrl: '/Felema.jpeg' },
+  { id: 1, name: 'Felema Garedow', role: 'CEO, Scientific Director', imageUrl: '/FelemaCe.jpeg' },
   { id: 2, name: 'Gemechis Sheleme', role: 'Chief Financial and HR Officer (CFO)', imageUrl: '/GemechisS.jpeg' },
   { id: 3, name: 'Samuel Tesfaye', role: 'Board Member', imageUrl: '/Samuel.jpg' },
   { id: 4, name: 'Nabiyat Lemma ', role: 'Chief Marketing and promotion  Officer', imageUrl: 'Nebyat.png' },
-  { id: 5, name: 'Jane Smith', role: 'CTO', imageUrl: '/Team_1.png' },
+  { id: 5, name: 'Belay Birhanu', role: 'CTO', imageUrl: '/Belay.jpg' },
+  {id: 6, name: 'Elsa Abira', role: 'Sales and Marketing', imageUrl: '/elsa.jpeg'},
 ];
