@@ -1,7 +1,7 @@
 
 export default function MissionVision() {
 return (
-  <section className="bg-gray-100 py-12">
+  <section className="bg-gray-100 py-12" id="about_us">
   <div className="max-container">
     <h2 className="text-3xl text-center font-semibold mb-8">Our Mission and Vision</h2>
 

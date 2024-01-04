@@ -7,6 +7,7 @@ import MissionVision from '@/components/MissionVision';
 import Partners from '@/components/Partners';
 import Services from '@/components/Services';
 import TeamSection from '@/components/TeamSection';
+import Testimonials from '@/components/Testimonial';
 
 export default function Home() {
   return (
@@ -19,7 +20,9 @@ export default function Home() {
       <Features />
       <Services/>
       <Partners/>
+      <Testimonials/>
       <GetApp />
+      
     </>
   )
 }
