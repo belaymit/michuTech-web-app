@@ -33,8 +33,10 @@ module.exports = {
         'bg-img-1': "url('/michuWashlink.png')",
         'bg-img-2': "url('/michuHome.jpeg')",
         'feature-bg': "url('/feature-bg.png')",
-        pattern: "url('/pattern.png')",
+        'pattern': "url('/pattern.png')",
         'pattern-2': "url('/pattern-bg.png')",
+        'bg-img-3': "url('/medical.jpg')",
+        'bg-img-4': "url('/machine.png')",
       },
       screens: {
         xs: '400px',

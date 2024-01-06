@@ -47,6 +47,19 @@ export default function Camp () {
           subtitle="Get your next hour at MichuGojo"
           peopleJoined="50+ Joined"
         />
+
+        <CampSite 
+          backgroundImage="bg-bg-img-3"
+          title="MichuTech Medical Solutions"
+          subtitle="Medical Solutions, Medical Care"
+          peopleJoined="50+ Joined"
+        />
+        <CampSite 
+          backgroundImage="bg-bg-img-4"
+          title="MichuTech Machine Learning Projects"
+          subtitle="Machine Learning Projects, Automation"
+          peopleJoined="50+ Joined"
+        />
       </div>
 
       <div className="flexEnd mt-10 px-6 lg:-mt-60 lg:mr-6">

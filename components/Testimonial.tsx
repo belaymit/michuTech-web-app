@@ -1,5 +1,6 @@
 // components/Testimonials.tsx
 
+import { testimonialsData } from '@/constants';
 import React from 'react';
 
 interface Testimonial {
@@ -10,49 +11,33 @@ interface Testimonial {
   comment: string;
 }
 
-const testimonialsData: Testimonial[] = [
-  {
-    id: 1,
-    name: 'Mr. Yonatan Wube',
-    img:'/Yonatan.jpeg',
-    role: 'CEO, Arki Sport Betting',
-    comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-  },
-  {
-    id: 2,
-    name: 'Mr. Sisay Girma',
-    img:'/Sisay.jpeg',
-    role: 'Wings Education and Media',
-    comment: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-];
 
 export default function Testimonials() {
   return (
-    <section className="bg-gray-100 py-16">
-      <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-8">What People Clients Say About MichuTech?</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {testimonialsData.map((testimonial) => (
-            <div key={testimonial.id} className="bg-white p-6 rounded-lg shadow-md">
-              <div className="flex items-start mb-4"> {/* Updated this line */}
-                <div className="flex-shrink-0">
-                  <img
-                    className="h-20 w-20 rounded-full object-cover"
-                    src={testimonial.img} 
-                    alt={`Avatar of ${testimonial.name}`}
-                  />
-                </div>
-                <div className="ml-3">
-                  <p className="text-gray-800 font-semibold">{testimonial.name}</p>
-                  <p className="text-gray-600">{testimonial.role}</p>
-                </div>
+    <section className="bg-gray-100 py-16 flex items-center">
+    <div className="container mx-auto flex flex-col items-center justify-center"> {/* Updated this line */}
+      <h2 className="text-3xl font-bold text-center mb-8">What People Clients Say About MichuTech?</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 justify-center">
+        {testimonialsData.map((testimonial) => (
+          <div key={testimonial.id} className="bg-white p-6 rounded-lg">
+            <div className="flex items-cn mb-4">
+              <div className="flex-shrink-0">
+                <img
+                  className="h-20 w-20 rounded-full object-cover"
+                  src={testimonial.img} 
+                  alt={`Avatar of ${testimonial.name}`}
+                />
               </div>
-              <p className="text-gray-600 mb-4">{testimonial.comment}</p>
+              <div className="ml-3">
+                <p className="text-gray-800 font-semibold">{testimonial.name}</p>
+                <p className="text-gray-600">{testimonial.role}</p>
+              </div>
             </div>
-          ))}
-        </div>
+            <p className="text-gray-600 mb-4">{testimonial.comment}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>  
   );
 }

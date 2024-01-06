@@ -1,11 +1,11 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '#home', key: 'home', label: 'Home' },
-  { href: '#about_us', key: 'about_us', label: 'About Us' },
-  { href: '#services', key: 'services', label: 'Services' },
-  { href: '#project', key: 'project', label: 'Projects' },
-  { href: '#team', key: 'team', label: 'Team' },
-  { href: '#contact_us', key: 'contact_us', label: 'Contact Us' },
+  { href: '#home', key: 'home', label: 'Home', id: '#home'},
+  { href: '#about_us', key: 'about_us', label: 'About Us', id: '#about_us' },
+  { href: '#services', key: 'services', label: 'Services', id: '#services' },
+  { href: '#project', key: 'project', label: 'Projects', id: '#project' },
+  { href: '#team', key: 'team', label: 'Team', id: '#team' },
+  { href: '#contact_us', key: 'contact_us', label: 'Contact Us', id: '#contact_us' },
 ];
 
 // CAMP SECTION
@@ -85,4 +85,22 @@ export const TEAM_MEMBERS = [
   { id: 4, name: 'Nabiyat Lemma ', role: 'Chief Marketing and promotion  Officer', imageUrl: 'Nebyat.png' },
   { id: 5, name: 'Belay Birhanu', role: 'CTO', imageUrl: '/Belay.jpg' },
   {id: 6, name: 'Elsa Abira', role: 'Sales and Marketing', imageUrl: '/elsa.jpeg'},
+];
+
+export const testimonialsData = [
+  {
+    id: 1,
+    name: 'Mr. Yonatan Wube',
+    img:'/Yonatan.jpeg',
+    role: 'CEO, Arki Sport Betting',
+    comment: 'MichuTech IT Solutions is a startup company founded by a team of dedicated and highly motivated young professionals. Their commitment to excellence is reflected in their diligent work ethic, consistently delivering projects on time and providing transparent progress updates as needed. I highly recommend collaborating with MichuTech for their professional and reliable services.',
+  },
+  {
+    id: 2,
+    name: 'Mr. Sisay Girma',
+    img:'/sis.png',
+    role: 'CEO, Wings Education and Media',
+    comment: 'MichuTech IT Solutions stands out as a startup venture crafted by a group of driven and enthusiastic young professionals. Their diligent efforts and commitment to delivering top-notch projects are commendable. I wholeheartedly endorse collaborating with them, as they consistently meet deadlines and keep stakeholders informed of their progress at every step. Working with MichuTech is a valuable experience due to their professionalism and dedication to excellence.',
+  },
+  
 ];
