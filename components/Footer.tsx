@@ -46,13 +46,16 @@ export default function Footer() {
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={SOCIALS.title}>
-                <ul className="regular-14 flex gap-4 text-white">
-                  {SOCIALS.links.map((link) => (
-                    <Link href="/" key={link}>
-                      <Image src={link} alt="logo" width={24} height={24} />
-                    </Link>
+              <ul className="regular-14 flex gap-4 text-white">
+                {
+                  SOCIALS.links.map((link) => (
+                    <a href={link.destination} key={link.url}>
+                      <a>
+                        <Image src={link.url} alt="logo" width={24} height={24} />
+                      </a>
+                    </a>
                   ))}
-                </ul>
+              </ul>
               </FooterColumn>
             </div>
           </div>
