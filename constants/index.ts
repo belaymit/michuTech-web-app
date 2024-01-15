@@ -56,19 +56,20 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Admin Officer', value: '+251-98-616-4444' },
-    { label: 'Email Officer', value: 'michutech@gmail.com' },
+    { label: 'Phone', value: '+251-98-616-4444' },
+    { label: 'Email', value: 'michutechitsolutionsplc@gmail.com' },
   ],
 };
 
 export const SOCIALS = {
-  title: 'Social',
+  title: 'Socials',
   links: [
-    '/facebook.svg',
-    '/instagram.svg',
-    '/twitter.svg',
-    '/youtube.svg',
-    '/wordpress.svg',
+    { url: '/facebook.svg', destination: '/facebook-page' },
+    { url: '/instagram.svg', destination: '/instagram-page' },
+    { url: '/twitter.svg', destination: '/twitter-page' },
+    { url: '/youtube.svg', destination: '/youtube-channel' },
+    { url: '/wordpress.svg', destination: '/wordpress-site' },
+    { url: '/linkedIn.png', destination: '/linkedin-profile' },
   ],
 };
 
@@ -99,7 +100,7 @@ export const testimonialsData = [
     id: 2,
     name: 'Mr. Sisay Girma',
     img:'/sis.png',
-    role: 'CEO, Wings Education and Media',
+    role: 'Project Manager, Wings Education and Media',
     comment: 'MichuTech IT Solutions stands out as a startup venture crafted by a group of driven and enthusiastic young professionals. Their diligent efforts and commitment to delivering top-notch projects are commendable. I wholeheartedly endorse collaborating with them, as they consistently meet deadlines and keep stakeholders informed of their progress at every step. Working with MichuTech is a valuable experience due to their professionalism and dedication to excellence.',
   },
   
