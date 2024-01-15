@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Hero(){
   return (
-    <section className="bg-blue-900 text-white p-24 flex flex-col lg:flex-row justify-center items-center" style={{ height: '80vh' }}>
+    <section className="text-white p-24 flex flex-col lg:flex-row justify-center items-center" style={{ height: '80vh', background:"#0B82CF" }}>
     <div className="container mx-auto text-center lg:text-left lg:w-1/2">
       <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4">
         Transforming Ideas into Digital Solutions
