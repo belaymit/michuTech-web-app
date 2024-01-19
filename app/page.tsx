@@ -1,7 +1,8 @@
 import Camp from "@/components/Camp";
+import Contact from '@/components/Contact';
 import Features from "@/components/Features";
 import GetApp from "@/components/GetApp";
-import Guide from "@/components/GetApp";
+import Guide from '@/components/Guide';
 import Hero from "@/components/Hero";
 import MissionVision from '@/components/MissionVision';
 import Partners from '@/components/Partners';
@@ -16,13 +17,13 @@ export default function Home() {
       <Camp />
       <MissionVision/>
       <TeamSection/>
-      <Guide />
+      <Guide/>
       <Features />
       <Services/>
       <Partners/>
       <Testimonials/>
       <GetApp />
-      
+      <Contact />
     </>
   )
 }
