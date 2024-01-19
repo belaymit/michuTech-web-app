@@ -153,3 +153,13 @@ body {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.custom-width-form {
+  width: 65% !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .custom-width-form {
+    width: 100% !important;
+  }
+}
