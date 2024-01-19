@@ -25,7 +25,7 @@ export default function Features(){
               height={50}
               className="absolute left-[-5px] top-[-28px] w-10 lg:w-[50px]"
             />
-            <h2 className="bold-40 lg:bold-64">Our Projects</h2>
+            <h2 className="bold-40 lg:bold-64" style={{color:"#0B82CF"}}>Our Projects</h2>
           </div>
           <ul className="mt-10 grid gap-10 md:grid-cols-2 lg:mg-20 lg:gap-20">
             {FEATURES.map((feature) => (
@@ -52,13 +52,13 @@ type FeatureItem = {
 const FeatureItem = ({ title, icon, description }: FeatureItem) => {
   return (
     <li className="flex w-full flex-1 flex-col items-start">
-      <div className="rounded-full p-4 lg:p-7 bg-green-50">
+      <div className="rounded-full p-4 lg:p-7" style={{background:"#0B82CF"}}>
         <Image src={icon} alt="map" width={28} height={28} />
       </div>
       <h2 className="bold-20 lg:bold-32 mt-5 capitalize">
         {title}
       </h2>
-      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none">
+      <p className="regular-16 mt-5 bg-white/80 text-gray-30 lg:mt-[30px] lg:bg-none" style={{textAlign:"justify"}}>
         {description}
       </p>
     </li>

@@ -16,7 +16,7 @@ export default function Navbar () {
   return (
    <nav className="flexBetween padding-container fixed top-0 w-full left-0 right-0 z-30 py-3" style={{ padding: '1rem 2rem', background:"#0B82CF", borderBottom:"1px solid #73BAE8" }}>
       <div className="flex gap-2 flex-row">
-        <a href="#home">
+        <a href="/">
           <div className="flex gap-2">
           <Image src="/michuLogo.png" alt="logo" width={50} height={50} style={{ borderRadius: '0.25rem' }} />
           <div className="text-white text-xl">

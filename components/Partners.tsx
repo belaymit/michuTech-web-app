@@ -9,7 +9,7 @@ interface Partner {
 
 
 const PartnerCard: React.FC<Partner> = ({ id, name, logoUrl }) => (
-  <div key={id} className="bg-white rounded flex flex-col items-center justify-center text-center">
+  <div key={id} className="bg-white rounded flex flex-col items-center justify-center text-center p-2">
     <img src={logoUrl} alt={name} className="max-h-28 object-contain mb-4" />
   </div>
 );
