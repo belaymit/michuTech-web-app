@@ -1,6 +1,11 @@
+import { GrMail } from "react-icons/gr";
+import { MdCall } from "react-icons/md";
+import { BsLinkedin } from "react-icons/bs";
+import { BsGithub } from "react-icons/bs";
+
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: '#home', key: 'home', label: 'Home', id: '#home'},
+  { href: '/', key: 'home', label: 'Home', id: '#home'},
   { href: '#about_us', key: 'about_us', label: 'About Us', id: '#about_us' },
   { href: '#services', key: 'services', label: 'Services', id: '#services' },
   { href: '#project', key: 'project', label: 'Projects', id: '#project' },
@@ -35,23 +40,29 @@ export const FEATURES = [
 ];
 
 // FOOTER SECTION
+// constants.ts
+
 export const FOOTER_LINKS = [
   {
     title: 'Learn More',
     links: [
-      'About Home',
-      'Press Releases',
-      'Environment',
-      'Jobs',
-      'Privacy Policy',
-      'Contact Us',
+      { text: 'About Home', destination: '/about-home' },
+      { text: 'Press Releases', destination: '/press-releases' },
+      { text: 'Environment', destination: '/environment' },
+      { text: 'Jobs', destination: '/jobs' },
+      { text: 'Privacy Policy', destination: '/pages/privacy-policy' },
+      { text: 'Code of Conducts', destination: '/pages/code-conduct' },
     ],
   },
   {
     title: 'Our Community',
-    links: ['Community', 'MichuTech', 'MichuTech'],
+    links: [
+      { text: 'Community', destination: '/community' },
+      { text: 'MichuTech', destination: '/michutech' },
+    ],
   },
 ];
+
 
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
@@ -64,12 +75,10 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: 'Socials',
   links: [
-    { url: '/facebook.svg', destination: '/facebook-page' },
-    { url: '/instagram.svg', destination: '/instagram-page' },
-    { url: '/twitter.svg', destination: '/twitter-page' },
-    { url: '/youtube.svg', destination: '/youtube-channel' },
-    { url: '/wordpress.svg', destination: '/wordpress-site' },
-    { url: '/linkedIn.png', destination: '/linkedin-profile' },
+    { url: '/facebook.svg', destination: '/www.facebook.com' },
+    { url: '/instagram.svg', destination: '/www.instagram.com/michutech_' },
+    { url: '/twitter.svg', destination: '/www.twitter.com' },
+    { url: '/linkedIn.png', destination: '/linkedin.com/company/michutech-it-solutions' },
   ],
 };
 
@@ -77,15 +86,125 @@ export const partners = [
   { id: 1, name: 'Arki Sport Betting', logoUrl: '/arki.jpeg' },
   { id: 2, name: 'Wings Education and Media', logoUrl: '/wings.gif' },
   { id: 3, name: 'Washlink, Wear Clean', logoUrl: '/wLink.png' },
+  { id: 4, name: 'Yer Tech', logoUrl: '/yerTech.jpg' },
 ];
 
 export const TEAM_MEMBERS = [
-  { id: 1, name: 'Felema Garedow', role: 'CEO, Scientific Director', imageUrl: '/FelemaCe.jpeg' },
-  { id: 2, name: 'Gemechis Sheleme', role: 'Chief Financial and HR Officer (CFO)', imageUrl: '/GemechisS.jpeg' },
-  { id: 3, name: 'Samuel Tesfaye', role: 'Board Member', imageUrl: '/Samuel.jpg' },
-  { id: 4, name: 'Nabiyat Lemma ', role: 'Chief Marketing and promotion  Officer', imageUrl: 'Nebyat.png' },
-  { id: 5, name: 'Belay Birhanu', role: 'CTO', imageUrl: '/Belay.jpg' },
-  {id: 6, name: 'Elsa Abira', role: 'Sales and Marketing', imageUrl: '/elsa.jpeg'},
+  { 
+    id: 1, name: 'Falema Garedow',
+    fullName: 'Falema Garedow Herpa',
+     role: 'CEO, Scientific Director',
+    imageUrl: '/FelemaCe.jpeg',
+    responsibility:"Co-founder and CEO",
+    hobbies: "Reading, Writing, and Traveling",
+    Experience: [
+     "Lecturer of Computing and Informatics at Haramaya University",
+     "Manager at Arki Virtual Sport Betting",
+     "Freelance Developer and Translator",
+     "Volunteer at US Alumni Association, TechCamp Addis 2022",
+     "Researcher and founding member of Internet Society, Ethiopia Chapter"
+    ],
+    Education:[
+      "MA in Leadership and Management at Ethiopian Graduate School of Theology",
+      "MSc in Computer Science and Engineering, Cloud Computing Special Interest Group, Adama Science and Technology University.",
+      "Bsc degree in Information Science, Jimma Institute of Technology",
+    ]
+     },
+  {
+     id: 2, name: 'Gemechis Sheleme', 
+     fullName: 'Gemechis Sheleme Kabeta',
+     role: 'Chief Financial and HR Officer (CFO)',
+    imageUrl: '/GemechisS.jpeg',
+    responsibility:"Co-founder and CFO, Strategic Advisor",
+    hobbies: "Reading, Writing, and Traveling",
+    Experience: [
+     "Teacher- Moral and character building at School of Nation International School. Administrative assistance, Coordinator of extra- curriculum activities and member of Curriculum Design team ",
+      "Volunteer Researcher at SOPHOS Africa, Ethiopia ",
+    ],
+    Education:[
+      "MA Leadership and Management at Ethiopian Graduate School of Theology",
+      "Bsc. Mechanical Design from Addis Ababa Science and Technology University",
+    ]
+  },
+  { 
+    id: 3, name: 'Samuel Tesfaye',
+    fullName: 'Samuel Tesfaye',
+    role: 'Board Member',
+    imageUrl: '/Samuel.jpg',
+    responsibility:"Board Member",
+    hobbies: "Reading, Writing, and Traveling",
+    Experience: [
+    "Lecturer of Computing and Informatics at Haramaya University",
+    "Manager at Arki Virtual Sport Betting",
+    "Freelance Developer and Translator",
+    "Volunteer at US Alumni Association, TechCamp Addis 2022",
+    "Researcher and founding member of Internet Society, Ethiopia Chapter"
+  ],
+  Education:[
+    "Bsc degree in Information Science, Jimma Institute of Technology",
+    "MSc in Computer Science and Engineering, Cloud Computing Special Interest Group, Adama Science and Technology University.",
+    "MA in Leadership and Management at Ethiopian Graduate School of Theology"
+  ]
+ },
+  { 
+    id: 4, 
+    name: 'Nabiyat Lemma ', 
+    fullName: 'Nebiyat Lema Tuji',
+    role: 'Chief Marketing and Promotion  Officer', 
+    imageUrl: 'Nebyat.png',
+    responsibility:"Chief Marketing and Promotion  Officer",
+    hobbies: "Reading, Writing, and Traveling",
+    Experience: [
+     "Biomedical Service Manager at Bilham Pharmaceuticals PLC",
+     "Technical Director at Yunabek Trading PLC",
+     "CoFounder and Cheif Biomedical Engineer at YER Tech Engineering Solutions PLC"
+    ],
+    Education:[
+      "MSc, International Business at Addis Ababa University",
+      "BCS, Biomedical Engineering at Jimma Institute of Technology",
+      "BSC, Management at Jimma University(Distance)",
+    ]
+  },
+  { 
+    id: 5, name: 'Belay Birhanu',
+    fullName: 'Belay Birhanu Gibina',
+    role: 'CTO, Product Manager', 
+    imageUrl: '/Belay.jpg',
+    responsibility:"CTO, Product Manager",
+    hobbies: "Watching Historic Movies, Coding, Reading Fictions, and Traveling",
+    Experience: [
+      "Front-end Developer, 10 Academy, On-Site - June 2023 - Present",
+      "Full-stack Developer, Highlighted Personal Projects · Full-time,  Remote - Oct 2022 - Aug 2023",
+      "Transcriber/Data Entry Clerk /Proofreader/Translator, Freelance (Self employed), Remote - May 2023 - Nov 2023",
+      "Web Developer, Freelancer, Harar, Ethiopia - January 2019 - June 2021 ",
+     "Assistant Lecturer, Computing and Informatics at Haramaya University - September 2019 - October 2021",
+    ],
+    Education:[
+      "Bsc degree in Computer Science and Engineering, Mekelle Institute of Technology, October 2014- June 2018",
+      "MSc in Computer Science and Engineering, Artificial Intelligence Interest Group, Adama Science and Technology University, October 2021- June 2023",
+      "Full-stack Development, Microverse · Full-time,  Remote - Oct 2023 - May 2023"
+    ]
+   },
+  {
+    id: 6, name: 'Elsa Abira', 
+    fullName: 'Elsa Abira',
+    role: 'Sales and Marketing', 
+    imageUrl: '/elsa.jpeg',
+    responsibility:"Sales and Marketing",
+    hobbies: "Reading, Writing, and Traveling",
+    Experience: [
+      "Lecturer of Computing and Informatics at Haramaya University",
+      "Manager at Arki Virtual Sport Betting",
+      "Freelance Developer and Translator",
+      "Volunteer at US Alumni Association, TechCamp Addis 2022",
+      "Researcher and founding member of Internet Society, Ethiopia Chapter"
+      ],
+      Education:[
+        "Bsc degree in Information Science, Jimma Institute of Technology",
+        "MSc in Computer Science and Engineering, Cloud Computing Special Interest Group, Adama Science and Technology University.",
+        "MA in Leadership and Management at Ethiopian Graduate School of Theology"
+      ]
+  },
 ];
 
 export const testimonialsData = [
@@ -103,5 +222,52 @@ export const testimonialsData = [
     role: 'Project Manager, Wings Education and Media',
     comment: 'MichuTech IT Solutions stands out as a startup venture crafted by a group of driven and enthusiastic young professionals. Their diligent efforts and commitment to delivering top-notch projects are commendable. I wholeheartedly endorse collaborating with them, as they consistently meet deadlines and keep stakeholders informed of their progress at every step. Working with MichuTech is a valuable experience due to their professionalism and dedication to excellence.',
   },
-  
 ];
+
+type SocialMedia = {
+  text: string;
+  icon: React.ComponentType; 
+  link: string;
+};
+
+type ContactItem = {
+  title: string;
+  subtitle: string;
+  social_media: SocialMedia[];
+};
+
+type ContactData = {
+  Contact: ContactItem[];
+};
+
+export const contactData: ContactData = {
+  Contact: [
+    {
+      title: "Contact Us",
+      subtitle: "GET IN TOUCH",
+      social_media: [
+        {
+          text: "michutechitsolutionsplc@gmail.com",
+          icon: GrMail,
+          link: "mailto:michutechitsolutionsplc@gmail.com",
+        },
+        {
+          text: "(+251) 98-616-4444",
+          icon: MdCall,
+          link: "https://wa.me/1234567890",
+        },
+        {
+          text: "LinkedIn",
+          icon: BsLinkedin,
+          link: "linkedin.com/company/michutech-it-solutions/",
+        },
+        {
+          text: "GitHub",
+          icon: BsGithub,
+          link: "https://github.com/belaymit",
+        },
+      ],
+    },
+  ],
+};
+
