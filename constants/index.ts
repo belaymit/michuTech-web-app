@@ -6,11 +6,11 @@ import { BsGithub } from "react-icons/bs";
 // NAVIGATION
 export const NAV_LINKS = [
   { href: '/', key: 'home', label: 'Home', id: '#home'},
-  { href: '#about_us', key: 'about_us', label: 'About Us', id: '#about_us' },
-  { href: '#services', key: 'services', label: 'Services', id: '#services' },
-  { href: '#project', key: 'project', label: 'Projects', id: '#project' },
-  { href: '#team', key: 'team', label: 'Team', id: '#team' },
-  { href: '#contact_us', key: 'contact_us', label: 'Contact Us', id: '#contact_us' },
+  { href: '/#about_us', key: 'about_us', label: 'About Us', id: '#about_us' },
+  { href: '/#services', key: 'services', label: 'Services', id: '#services' },
+  { href: '/#project', key: 'project', label: 'Projects', id: '#project' },
+  { href: '/#team', key: 'team', label: 'Team', id: '#team' },
+  { href: '/#contact_us', key: 'contact_us', label: 'Contact Us', id: '#contact_us' },
 ];
 
 // CAMP SECTION
@@ -46,10 +46,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Learn More',
     links: [
-      { text: 'About Home', destination: '/about-home' },
-      { text: 'Press Releases', destination: '/press-releases' },
-      { text: 'Environment', destination: '/environment' },
-      { text: 'Jobs', destination: '/jobs' },
+      { text: 'About MichuTech', destination: '/pages/about-home' },
       { text: 'Privacy Policy', destination: '/pages/privacy-policy' },
       { text: 'Code of Conducts', destination: '/pages/code-conduct' },
     ],
@@ -57,8 +54,7 @@ export const FOOTER_LINKS = [
   {
     title: 'Our Community',
     links: [
-      { text: 'Community', destination: '/community' },
-      { text: 'MichuTech', destination: '/michutech' },
+      { text: 'Community and Mentors', destination: '/pages/community' }
     ],
   },
 ];
@@ -67,7 +63,7 @@ export const FOOTER_LINKS = [
 export const FOOTER_CONTACT_INFO = {
   title: 'Contact Us',
   links: [
-    { label: 'Phone', value: '+251-98-616-4444' },
+    { label: 'Phone', value: '+251-98-616-4444/ +251-98-626-4444' },
     { label: 'Email', value: 'michutechitsolutionsplc@gmail.com' },
   ],
 };
@@ -96,7 +92,6 @@ export const TEAM_MEMBERS = [
      role: 'CEO, Scientific Director',
     imageUrl: '/FelemaCe.jpeg',
     responsibility:"Co-founder and CEO",
-    hobbies: "Reading, Writing, and Traveling",
     Experience: [
      "Lecturer of Computing and Informatics at Haramaya University",
      "Manager at Arki Virtual Sport Betting",
@@ -116,7 +111,6 @@ export const TEAM_MEMBERS = [
      role: 'Chief Financial and HR Officer (CFO)',
     imageUrl: '/GemechisS.jpeg',
     responsibility:"Co-founder and CFO, Strategic Advisor",
-    hobbies: "Reading, Writing, and Traveling",
     Experience: [
      "Teacher- Moral and character building at School of Nation International School. Administrative assistance, Coordinator of extra- curriculum activities and member of Curriculum Design team ",
       "Volunteer Researcher at SOPHOS Africa, Ethiopia ",
@@ -127,23 +121,21 @@ export const TEAM_MEMBERS = [
     ]
   },
   { 
-    id: 3, name: 'Samuel Tesfaye',
-    fullName: 'Samuel Tesfaye',
+    id: 3, name: 'Dr.Samuel Tesfaye',
+    fullName: 'Dr. Samuel Tesfaye, MD, MPH Candidate',
     role: 'Board Member',
     imageUrl: '/Samuel.jpg',
     responsibility:"Board Member",
-    hobbies: "Reading, Writing, and Traveling",
     Experience: [
-    "Lecturer of Computing and Informatics at Haramaya University",
-    "Manager at Arki Virtual Sport Betting",
-    "Freelance Developer and Translator",
-    "Volunteer at US Alumni Association, TechCamp Addis 2022",
-    "Researcher and founding member of Internet Society, Ethiopia Chapter"
+    "Former General Practitioner Head of emergency department and coordinator of emergency response team at primary Ginchi Hospital, Ethiopia",
+    "Head of Pediatrics and child health department and nutrition program coordinator at Bisidimo General Hospital and Leprosy Center",
+    "Clinical Practice and Nutrition Programs"
   ],
   Education:[
-    "Bsc degree in Information Science, Jimma Institute of Technology",
-    "MSc in Computer Science and Engineering, Cloud Computing Special Interest Group, Adama Science and Technology University.",
-    "MA in Leadership and Management at Ethiopian Graduate School of Theology"
+    "MPH Candidate at St. Paul Millennium Medical College",
+    "Dr samuel Tesfaye medical doctor and mph (candidate at Haramaya university)",
+    "A family medicine resident at st Paul millennium Medical College, certified Tot trainer of UPdated CMAM training at federal and regional level.",
+    "Medical Doctor at Bahir Dar University",
   ]
  },
   { 
@@ -153,7 +145,6 @@ export const TEAM_MEMBERS = [
     role: 'Chief Marketing and Promotion  Officer', 
     imageUrl: 'Nebyat.png',
     responsibility:"Chief Marketing and Promotion  Officer",
-    hobbies: "Reading, Writing, and Traveling",
     Experience: [
      "Biomedical Service Manager at Bilham Pharmaceuticals PLC",
      "Technical Director at Yunabek Trading PLC",
@@ -171,7 +162,6 @@ export const TEAM_MEMBERS = [
     role: 'CTO, Product Manager', 
     imageUrl: '/Belay.jpg',
     responsibility:"CTO, Product Manager",
-    hobbies: "Watching Historic Movies, Coding, Reading Fictions, and Traveling",
     Experience: [
       "Front-end Developer, 10 Academy, On-Site - June 2023 - Present",
       "Full-stack Developer, Highlighted Personal Projects · Full-time,  Remote - Oct 2022 - Aug 2023",
@@ -180,9 +170,9 @@ export const TEAM_MEMBERS = [
      "Assistant Lecturer, Computing and Informatics at Haramaya University - September 2019 - October 2021",
     ],
     Education:[
-      "Bsc degree in Computer Science and Engineering, Mekelle Institute of Technology, October 2014- June 2018",
-      "MSc in Computer Science and Engineering, Artificial Intelligence Interest Group, Adama Science and Technology University, October 2021- June 2023",
-      "Full-stack Development, Microverse · Full-time,  Remote - Oct 2023 - May 2023"
+      "Full-stack Development, Microverse · Full-time,  Remote - Oct 2023 - May 2023",
+      "MSc in Computer Science and Engineering, Artificial Intelligence Interest Group, Adama Science and Technology University, October 2021 - June 2023",
+      "Bsc degree in Computer Science and Engineering, Mekelle Institute of Technology, October 2014 - June 2018"
     ]
    },
   {
@@ -191,18 +181,11 @@ export const TEAM_MEMBERS = [
     role: 'Sales and Marketing', 
     imageUrl: '/elsa.jpeg',
     responsibility:"Sales and Marketing",
-    hobbies: "Reading, Writing, and Traveling",
     Experience: [
-      "Lecturer of Computing and Informatics at Haramaya University",
-      "Manager at Arki Virtual Sport Betting",
-      "Freelance Developer and Translator",
-      "Volunteer at US Alumni Association, TechCamp Addis 2022",
-      "Researcher and founding member of Internet Society, Ethiopia Chapter"
+      "Sales and Marketing Manager",
       ],
       Education:[
-        "Bsc degree in Information Science, Jimma Institute of Technology",
-        "MSc in Computer Science and Engineering, Cloud Computing Special Interest Group, Adama Science and Technology University.",
-        "MA in Leadership and Management at Ethiopian Graduate School of Theology"
+        "Marketing Management"
       ]
   },
 ];
@@ -252,7 +235,7 @@ export const contactData: ContactData = {
           link: "mailto:michutechitsolutionsplc@gmail.com",
         },
         {
-          text: "(+251) 98-616-4444",
+          text: "(+251) 98-616-4444/ (+251) 98-626-4444",
           icon: MdCall,
           link: "https://wa.me/1234567890",
         },
