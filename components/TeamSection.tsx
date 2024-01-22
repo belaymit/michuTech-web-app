@@ -8,7 +8,6 @@ interface TeamMember {
   name: string;
   fullName: string;
   role: string;
-  hobbies: string;
   imageUrl: string;
   responsibility: string; 
   Experience: { [key: number]: string }[]; 
@@ -22,9 +21,8 @@ interface TeamMemberCardProps {
   openModal: () => void; 
 }
 
-const TeamSection: React.FC = () => {
+export default function TeamSection(){
   const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
-
   const openModal = (member: TeamMember) => {
     setSelectedMember(member);
   };
@@ -44,47 +42,36 @@ const TeamSection: React.FC = () => {
       </div>
     </div>
     {selectedMember && (
-  <Modal onClose={closeModal}>
-    <div className="w-full">
-      <img src={selectedMember.imageUrl} alt={selectedMember.name} className="rounded-full h-40 w-40 mx-auto mb-4 object-cover" />
-      <h3 className="text-lg font-semibold mb-2 text-center">{selectedMember.fullName}</h3>
-      <p className="text-gray-500 text-center">{selectedMember.responsibility}</p>
+      <Modal onClose={closeModal}>
+        <div className="w-full">
+          <img src={selectedMember.imageUrl} alt={selectedMember.name} className="rounded-full h-40 w-40 mx-auto mb-4 object-cover" />
+          <h3 className="text-lg font-semibold mb-2 text-center">{selectedMember.fullName}</h3>
+          <p className="text-gray-500 text-center">{selectedMember.responsibility}</p>
 
-      <div className="mt-4">
-        <h4 className="text-xl font-semibold" style={{color:"#0B82CF"}}>Experience</h4>
-        <div className="bg-white p-4 rounded-md shadow-md ">
-          <ul className="text-gray-500">
-            {selectedMember.Experience.map((exp, index) => (
-              <li key={index}>{`${index + 1}. ${exp}`}</li>
-            ))}
-          </ul>
+          <div className="mt-4">
+            <h4 className="text-xl font-semibold" style={{color:"#0B82CF"}}>Experience</h4>
+            <div className="bg-white p-4 rounded-md shadow-md ">
+              <ul className="text-gray-500">
+                {selectedMember.Experience.map((exp, index) => (
+                  <li key={index}>{`${index + 1}. ${exp}`}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <div className="mt-4">
+            <h4 className="text-xl font-semibold" style={{color:"#0B82CF"}}>Education</h4>
+            <div className="bg-white p-4 rounded-md shadow-md">
+              <ul className="text-gray-500">
+                {selectedMember.Education.map((edu, index) => (
+                  <li key={index}>{`${index + 1}. ${edu}`}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-
-      <div className="mt-4">
-        <h4 className="text-xl font-semibold" style={{color:"#0B82CF"}}>Education</h4>
-        <div className="bg-white p-4 rounded-md shadow-md">
-          <ul className="text-gray-500">
-            {selectedMember.Education.map((edu, index) => (
-              <li key={index}>{`${index + 1}. ${edu}`}</li>
-            ))}
-          </ul>
-        </div>
-      </div>
-      <div className="mt-4">
-        <h4 className="text-xl font-semibold" style={{color:"#0B82CF"}}>Hobbies</h4>
-        <div className="bg-white p-4 rounded-md shadow-md">
-          <ul className="text-gray-500">
-            {selectedMember.hobbies}
-          </ul>
-        </div>
-        </div>
-    </div>
-  </Modal>
-)}
-
-
-
+      </Modal>
+    )}
   </section>
   );
 };
@@ -103,5 +90,3 @@ const TeamMemberCard: React.FC<TeamMemberCardProps> = ({ id, name, role, imageUr
   );
 };
 
-
-export default TeamSection;
