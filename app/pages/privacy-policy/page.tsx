@@ -76,7 +76,7 @@ export default function PrivacyPolicy() {
         </ul>
 
         <p className="mt-8 text-gray-500 text-center">
-          Last updated: January 1, 2024
+          Last updated: January 20, 2024
         </p>
       </div>
     </div>
