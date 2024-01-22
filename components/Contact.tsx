@@ -3,6 +3,7 @@ import { createElement, useRef } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import emailjs from "@emailjs/browser";
 import { contactData } from '@/constants';
+import Link from 'next/link';
 
 export default function Contact() {
   const form = useRef() as React.MutableRefObject<HTMLFormElement>;
@@ -11,10 +12,10 @@ export default function Contact() {
 
     emailjs
       .sendForm(
-      'service_gonc0ha',
-       'template_28sg7th', 
+      'service_sygc3zk',
+       'template_eh9ljbg', 
        form.current, 
-       'EYcaIBZlv4Oc1lA3E'
+       'EuywcH0Q8QXRl8dVn'
       )
       .then(
         (result) => {
@@ -84,9 +85,9 @@ export default function Contact() {
             className="flex items-center gap-2"
           >
             <h4 style={{color:"#0B82CF"}}>{createElement(content.icon)}</h4>
-            <a className="font-Poppins" href={content.link} target="_blank" rel="noreferrer">
+            <Link className="font-Poppins" href={content.link} target="_blank" rel="noreferrer">
               {content.text}
-            </a>
+            </Link>
           </div>
         ))}
       </div>
