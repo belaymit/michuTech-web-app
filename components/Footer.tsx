@@ -4,26 +4,37 @@ import Link from 'next/link'
 import React from 'react'
 
 export default function Footer() {
+  
   return (
-    <footer id="contact_us" className="flexCenter mb-0 pb-6 pt-4 bg-blue-500 text-white">
+    <footer id="footer" className="flexCenter mb-0 pb-6 pt-4 text-white" style={{background:"#0B82CF"}}>
       <div className="padding-container max-container flex w-full flex-col gap-14">
         <div className="flex flex-col items-start justify-center gap-[10%] md:flex-row">
-          <Link href="/" className="mb-10">
-            <Image src="/michuTech-logo.png" alt="logo" width={200} height={100}/>
+        <div className="flex gap-2 flex-row">
+          <Link href="/">
+              <div className="flex gap-2">
+                <Image src="/michuLogo.png" alt="logo" width={50} height={50} style={{ borderRadius: '0.25rem' }} />
+                <div className="text-white text-xl">
+                  <h1>MICHUTECH</h1>
+                  <p>Connect to your future</p>
+                </div>
+              </div>
           </Link>
+          </div>
 
           <div className='flex flex-wrap gap-10 sm:justify-between md:flex-1'>
-            {FOOTER_LINKS.map((columns) => (
-              <FooterColumn title={columns.title}>
+          {FOOTER_LINKS.map((columns, columnIndex) => (
+              <FooterColumn key={columnIndex} title={columns.title}>
                 <ul className="regular-14 flex flex-col gap-4 text-black">
-                  {columns.links.map((link) => (
-                    <Link href="/" key={link}>
-                      {link}
-                    </Link>
+                  {columns.links.map((link, linkIndex) => (
+                    <li key={linkIndex}>
+                      <Link href={link.destination}>
+                        <p>{link.text}</p>
+                      </Link>
+                    </li>
                   ))}
                 </ul>
               </FooterColumn>
-            ))}
+           ))}
 
             <div className="flex flex-col gap-5">
               <FooterColumn title={FOOTER_CONTACT_INFO.title}>
@@ -49,11 +60,11 @@ export default function Footer() {
               <ul className="regular-14 flex gap-4 text-white">
                 {
                   SOCIALS.links.map((link) => (
-                    <a href={link.destination} key={link.url}>
-                      <a>
+                    <Link href={link.destination} key={link.url}>
+                      <span>
                         <Image src={link.url} alt="logo" width={24} height={24} />
-                      </a>
-                    </a>
+                      </span>
+                    </Link>
                   ))}
               </ul>
               </FooterColumn>
