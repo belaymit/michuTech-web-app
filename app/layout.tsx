@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'MichuTech App',
-  description: 'MichyTech Website',
+  description: 'MichuTech Website',
 }
 
 export default function RootLayout({
